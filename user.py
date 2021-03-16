@@ -1,4 +1,3 @@
-import getpass
 
 class User:
     """
@@ -7,29 +6,25 @@ class User:
 
 user_list=[]   
 
-def save_user(self)
+def save_user(self):
 
-'''
-method to add new user in a system
-'''
+    '''
+    method to add new user in a system
+    '''
  
-User.user_list.append(self)
+    User.user_list.append(self)
 
-def delete_user(self)
-'''
-method that remove a user from the list
-'''
-User.user_list.remove(self)
 
- def delete_user(self):
+def delete_user(self):
         '''
         method that remove a user from the list
         '''
 
         User.user_list.remove(self)
 
-    @classmethod
-    def find_by_name(cls, name):
+    
+@classmethod
+def find_by_name(cls, name):
         '''
         Method that find a user by name
         Args:
@@ -43,8 +38,8 @@ User.user_list.remove(self)
                 return user
 
     
-    @classmethod
-    def is_user_exists(cls, name):
+@classmethod
+def is_user_exists(cls, name):
         '''
         Method that check if the user exists
         Args:
@@ -59,8 +54,8 @@ User.user_list.remove(self)
         
         return False
     
-    @classmethod
-    def display_users(cls):
+@classmethod
+def display_users(cls):
         '''
         Method that show all users in the user_list
         '''
@@ -68,7 +63,8 @@ User.user_list.remove(self)
         return cls.user_list
 
 
-def __init__(self,lname,fname,passcode):
-self.lname=lname
-self.fname=fname
-self.password=password
+def __init__(self,lname,fname,password,confirmPassword):
+  self.lname=lname
+  self.fname=fname
+  self.password=password
+  self.confirmPassword=confirmPassword

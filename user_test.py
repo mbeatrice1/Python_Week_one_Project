@@ -10,10 +10,10 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
         '''
-        set up method to run before each test classes.
+        Set up method to run before each test classes.
         '''
 
-        self.new_user = User("Bella","Amandine","password","password")
+        self.new_user = User("Beatrice","Uwamahoro","password","password")
 
     def tearDown(self):
         '''
