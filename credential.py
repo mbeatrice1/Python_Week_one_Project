@@ -1,3 +1,5 @@
+from user import User
+
 class Credential:
     '''
     A class that create new credential
@@ -5,18 +7,13 @@ class Credential:
 
     credential_list = []
 
-    def __init__(self, account_name, password):
-
-        self.account_name = account_name
-        self.password = password
-
     def save_credential(self):
 
         '''
         a method to add new credential
         '''
 
-        self.credential_list.append(self)
+        save_credential.credential_list.append(self)
 
     def delete_credential(self):
         '''
@@ -61,3 +58,8 @@ class Credential:
             if cred.account_name == account_name:
                 return True
         return False
+
+def __init__(self, account_name, password):
+
+        self.account_name = account_name
+        self.password = password
